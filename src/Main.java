@@ -2,12 +2,15 @@ public class Main {
     public static void main(String[] args) {
         if(args.length < 3) {
             System.out.println("Please provide atleast 3 arguments");
+            return;
         }
         if(!isInteger(args[0], 10)) {
             System.out.println("Please provide a whole number no decimals as first parameter");
+            return;
         }
         if(!isFloat(args[1], 10)) {
             System.out.println("Please provide a number as a second parameter");
+            return;
         }
         ItemType type = null;
         try {
@@ -39,6 +42,14 @@ public class Main {
         return price;
     }
 
+    //Used to determine if a string is a integer
+
+    /**
+     *
+     * @param numberString
+     * @param radix
+     * @return true if string is a integer.
+     */
     public static boolean isInteger(String numberString, int radix) {
         if(numberString.isEmpty()) {
             return false;
@@ -56,6 +67,13 @@ public class Main {
         return true;
     }
 
+    //Used to determine if a string is a float
+    /**
+     *
+     * @param numberString
+     * @param radix
+     * @return true if string is a float.
+     */
     public static boolean isFloat(String numberString, int radix) {
         if(numberString.isEmpty()) {
             return false;
