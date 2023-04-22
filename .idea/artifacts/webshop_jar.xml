@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="webshop:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/webshop_jar</output-path>
+    <root id="archive" name="webshop.jar">
+      <element id="module-output" name="webshop" />
+    </root>
+  </artifact>
+</component>
