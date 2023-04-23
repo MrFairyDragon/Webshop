@@ -4,7 +4,8 @@ public enum CountryCode {
     NO,
     SE,
     GB,
-    DE;
+    DE,
+    NO_WAT;
 
 
 }
